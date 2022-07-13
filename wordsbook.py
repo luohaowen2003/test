@@ -33,7 +33,7 @@ def figure_out_put_name():
         os.mkdir("output")
         os.mkdir("output_translated")
     new_index=len(os.listdir("./output"))+1
-    return f"Words {new_index}"
+    return f"Words {new_index}.txt"
 
 def words_generator(random,n,beginning,length,filename):
     """在第一次使用时生成一个含有所有单词翻译的隐藏json文件；按照命令行参数生成单词本，分别保存到output和output_translated文件夹"""
